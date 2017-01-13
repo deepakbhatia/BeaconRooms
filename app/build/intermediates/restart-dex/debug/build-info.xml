@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="27044559431711"
+    token="-9158877836918473442"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="623" />
+    <task
+        name="instant-run-dex"
+        duration="41" />
+    <task
+        name="instant-run-transform"
+        duration="76" />
+    <task
+        name="verifier"
+        duration="6" />
+
+    <artifact
+        location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="26695377776567"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="26764538207545"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/builds/debug/26764538207545/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="26836875189792"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/builds/debug/26836875189792/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="26913924833704"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/builds/debug/26913924833704/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="27044559431711"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>
