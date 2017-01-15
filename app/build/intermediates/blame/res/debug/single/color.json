@@ -32,6 +32,10 @@
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_track.xml"
     },
     {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/color/design_error.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/color/design_error.xml"
+    },
+    {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_light.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/color/design_tint_password_toggle.xml"
     },
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",

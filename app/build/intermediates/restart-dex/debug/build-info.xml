@@ -5,61 +5,33 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="27044559431711"
+    timestamp="241617457820544"
     token="-9158877836918473442"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="623" />
+        duration="1337" />
     <task
         name="instant-run-dex"
-        duration="41" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="76" />
+        duration="88" />
     <task
         name="verifier"
-        duration="6" />
+        duration="2" />
 
     <artifact
-        location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/outputs/apk/app-armeabi-v7a-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="26695377776567"
+        timestamp="241617457820544"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/outputs/apk/app-debug.apk"
+            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/outputs/apk/app-armeabi-v7a-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="26764538207545"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/builds/debug/26764538207545/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="26836875189792"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/builds/debug/26836875189792/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="26913924833704"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/builds/debug/26913924833704/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="27044559431711"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

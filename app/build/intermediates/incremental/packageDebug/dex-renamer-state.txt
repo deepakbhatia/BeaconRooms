@@ -1,7 +1,0 @@
-#Wed Jan 11 17:42:33 CET 2017
-base.0=/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9efcab39245392b795b898de2f1d72cbecf874e6
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_53e082d0ac427ee0df49bc437a04093994da6a19/classes.dex
-base.1=/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_53e082d0ac427ee0df49bc437a04093994da6a19
-file.0=/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9efcab39245392b795b898de2f1d72cbecf874e6/classes.dex

@@ -12,7 +12,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.Button;
+import android.widget.TextView;
 
 import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.BeaconConsumer;
@@ -26,21 +27,39 @@ import org.altbeacon.beacon.utils.UrlBeaconUrlCompressor;
 
 import java.util.Collection;
 
-public class MainActivity extends AppCompatActivity implements BeaconConsumer, MonitorNotifier,RangeNotifier {
+public class MainActivity extends AppCompatActivity implements BeaconConsumer, MonitorNotifier,RangeNotifier, View.OnClickListener {
     protected static final String TAG = "MonitoringActivity";
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
+    private static  int JOINED_ROOM = 1;
+    private static  String CURRENT_ROOM = null;
+    private static  double CURRENT_ROOM_DISTANCE = 1000;
+
+    private android.support.v7.app.AlertDialog alertDialog;
 
     private BeaconManager beaconManager;
 
+    Button joinRoom;
+    private MainActivity activity;
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        joinRoom = (Button)findViewById(R.id.joinRoom);
+
+        joinRoom.setOnClickListener(this);
         verifyBluetooth();
         logToDisplay("Application just launched");
 
+
+        activity = this;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             // Android M Permission check
             if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -90,8 +109,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, M
     }
 
     public void onRangingClicked(View view) {
-        Intent myIntent = new Intent(this, RangingActivity.class);
-        this.startActivity(myIntent);
+
     }
 
     @Override
@@ -151,13 +169,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, M
     }
 
     public void logToDisplay(final String line) {
-        runOnUiThread(new Runnable() {
-            public void run() {
-                EditText editText = (EditText)MainActivity.this
-                        .findViewById(R.id.monitoringText);
-                editText.append(line+"\n");
-            }
-        });
+
     }
 
     @Override
@@ -199,17 +211,90 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, M
             if (beacon.getServiceUuid() == 0xfeaa && beacon.getBeaconTypeCode() == 0x10) {
                 // This is a Eddystone-URL frame
                 String url = UrlBeaconUrlCompressor.uncompress(beacon.getId1().toByteArray());
-                Log.d(TAG, "I see a beacon transmitting a url: " + url +
-                        " approximately " + beacon.getDistance() + " meters away.");
-            }
+
+
+                String roomName = url.split("room=")[1];
+                //Log.d(TAG,"roomname = " + roomName+":"+beacon.getDistance() +":"+CURRENT_ROOM_DISTANCE);
+                if(roomName!=null && JOINED_ROOM==1 && !roomName.equals(CURRENT_ROOM) ){
+
+
+                    Log.d(TAG, " I see a beacon transmitting a url: " + url +
+                            " approximately " + beacon.getDistance() + " meters away.");
+
+                    CURRENT_ROOM = roomName;
+
+                    CURRENT_ROOM_DISTANCE = beacon.getDistance();
+
+                    activity.runOnUiThread(new Runnable() {
+
+
+                        @Override
+                        public void run() {
+
+                            joinRoom.setText("Join " + CURRENT_ROOM);
+                            joinRoom.setEnabled(true);
+                        }
+                    });
+
+                }
+        }
         }
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        //((BeaconReferenceApplication) this.getApplicationContext()).setMonitoringActivity(null);
-
         beaconManager.unbind(this);
+    }
+
+
+    /*
+     * Creates an connect UI dialog
+     */
+    private void showConnectDialog(String url) {
+
+
+        alertDialog = Dialog.createConnectVideoDialog(new TextView(this),url,connectClickListener(url),cancelConnectDialogClickListener(),this);
+
+
+
+        alertDialog.show();
+
+    }
+
+    private DialogInterface.OnClickListener connectClickListener(final String url) {
+        return new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                JOINED_ROOM = -1;
+                Intent intent = new Intent(getApplicationContext(),RoomActivity.class);
+
+                intent.putExtra("room_url",url);
+
+                startActivity(intent);
+            }
+        };
+    }
+
+
+    private DialogInterface.OnClickListener cancelConnectDialogClickListener() {
+        return new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialog.dismiss();
+                JOINED_ROOM = 1;
+
+            }
+        };
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        if(view.getId() == R.id.joinRoom)
+        showConnectDialog(CURRENT_ROOM);
+
     }
 }

@@ -16,12 +16,24 @@
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_call_end_white_24px.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_call_end_white_24px.xml"
+    },
+    {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/navigation_empty_icon.xml"
+    },
+    {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/design_snackbar_background.xml"
     },
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
@@ -46,6 +58,10 @@
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_videocam_off_red_24px.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_videocam_off_red_24px.xml"
     },
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
@@ -84,12 +100,24 @@
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_call_white_24px.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_call_white_24px.xml"
+    },
+    {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_icon_background.xml"
     },
     {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_mic_green_24px.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_mic_green_24px.xml"
+    },
+    {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_mic_off_red_24px.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_mic_off_red_24px.xml"
     },
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
@@ -100,8 +128,20 @@
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/design_fab_background.xml"
+    },
+    {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_switch_camera_512dp.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_switch_camera_512dp.xml"
+    },
+    {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_call_black_24dp.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_call_black_24dp.xml"
     },
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
@@ -110,6 +150,10 @@
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
         "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/ic_videocam_green_24px.xml",
+        "source": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/src/main/res/drawable/ic_videocam_green_24px.xml"
     },
     {
         "merged": "/Users/obelix/Downloads/TESTGITREPOS/BeaconRooms/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
