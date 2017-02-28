@@ -9,9 +9,9 @@ Tested for Url, Uid, Power. Currently only displays in Console.
 
 Modified format for beacon(Just for testing):
 
-var eddystoneBeacon = require('./../../index');
+    var eddystoneBeacon = require('./../../index');
 
-eddystoneBeacon.advertiseUrl('http://room=TosiasRoom', { name: 'TosiasRoom' });
+    eddystoneBeacon.advertiseUrl('http://room=TosiasRoom', { name: 'TosiasRoom' });
 
 The MainActivity detects a room and uses the 'room=' to extract the roomname.
 
